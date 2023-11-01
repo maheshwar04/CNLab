@@ -1,3 +1,7 @@
+//Maheshwar Nag
+//2141014002
+//N
+
 import java.io.*;
 public class Ex2o2 {
     public static void main(String[] args) {
@@ -14,6 +18,6 @@ public class Ex2o2 {
     }
     long endTime=System.currentTimeMillis();
     long duration =endTime-startTime;
-    System.out.println("Time take without buffering "+duration+" milliseconds");
+    System.out.println("Time take with buffering "+duration+" milliseconds");
    }
   }

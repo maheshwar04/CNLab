@@ -1,3 +1,6 @@
+//Maheshwar Nag
+//2141014002
+//N
 import java.util.*;
 import java.io.*;
 public class Ex2o1 {
