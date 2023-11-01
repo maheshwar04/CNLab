@@ -1,15 +1,20 @@
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-
-public class Ex4o1 {
+import java.net.*;
+public class Ex4o1{
     public static void main(String[] args) {
-        String website = "github.com";
-
-        try {
-            InetAddress ipAddress = InetAddress.getByName(website);
-            System.out.println("IP Address for " + website + " is: " + ipAddress.getHostAddress());
-        } catch (UnknownHostException e) {
-            System.err.println("Unable to find IP address for " + website);
-        }
+        try{
+        InetAddress add=InetAddress.getByName("www.google.com");
+        System.out.println(add);
+        /* 
+        System.out.println(add.getHostName());
+        
+       InetAddress[] address=InetAddress.getAllByName("www.facebook.com");
+               
+       for(InetAddress addres:address){
+         System.out.println(addres);
+       }
+       */
+    }catch(UnknownHostException e){
+        System.err.println("not found");
     }
+}
 }
