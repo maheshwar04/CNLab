@@ -1,14 +1,20 @@
 package Ex5;
-import java.util.*;
 import java.net.*;
 import java.net.URL;
 public class Ob2 {
     public static void main(String[] args) throws Exception {
-        System.out.println("Enter url");
-        Scanner sc=new Scanner(System.in);
-        String website=sc.nextLine();
-        URL u=new URI(website).toURL();
-        Object o=u.getContent();
-        System.out.println("I got a"+o.getClass().getName());
+        try{
+        URL www =new URL("https://www.oreilly.com/index.html#p1");
+        URL ibiblio= new URL("https://www.oreilly.com/index.html#q2");
+        if(ibiblio.equals(www)){
+            System.out.println(ibiblio+"  is same as  "+www);
+        }
+        else{
+            System.out.println(ibiblio+"  is not same as   "+www);
+        }
+    }
+    catch(MalformedURLException e){
+        System.err.println(e);
+    }
     }
 }
