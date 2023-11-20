@@ -1,3 +1,4 @@
+
 class thread1 extends Thread{
        public void run(){
         for(int i=0;i<10;i++){
@@ -14,7 +15,7 @@ class thread2 extends Thread{
        }
   
 }
-public class Exero {
+public class Ob1 {
       public static void main(String[] args){
         thread1 t1=new thread1();
         thread2 t2=new thread2();

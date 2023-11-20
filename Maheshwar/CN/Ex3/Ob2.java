@@ -1,4 +1,4 @@
-public class returnthread {
+public class Ob2 {
        public static void main(String[] args) {
             Thread workThread=new Thread(new worker());
             workThread.start();
