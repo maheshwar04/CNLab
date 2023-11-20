@@ -1,7 +1,6 @@
 //Maheshwar Nag
 //2141014002
 //N
-
 import java.io.*;
 public class Ex2o2 {
     public static void main(String[] args) {
