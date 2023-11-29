@@ -1,0 +1,66 @@
+                                                               Medium access control sublayer
+
+Networks can be divided into two categories :
+1)Using point to point connections   
+2)Using broadcast channels(multiaccess channel & random access  channel)
+
+>>>> The medium access conbtrol is a part of data link layer and protocol involved in this sublayer are responsible for the data communication b/w several users
+who share the common channel. 
+
+The channel allocation problem :
+
+>>>>Assumption to take during dynamic channel allocation :
+i)Independent Traffic − It is assumed that the users are independent of each other, i.e. each user has to send or receive data which is 
+independent of the data transmission of the other users in the network system.
+
+ii)Single Channel − The algorithms assume that all contending stations request for transmission via a single channel. 
+
+iii)Detectable Collisions − If two frames from different stations are simultaneously transmitted, 
+the resulting signal is distorted, and a collision is said to occur. If a collision occurs, all stations should be able to detect the collision. 
+The frames lost due to collisions are retransmitted.
+
+iv)Continuous Time or Slotted Time − Depending upon the allocation scheme, time may be considered as continuous or slotted. In continuous time,
+ frame transmission can start at any instant. In slotted time, time is divided into discrete slots. If a slot does not contain any frame, 
+it is called an idle slot; if it contains a single frame, then the transmission is successful;
+if it contains more than one frames, then a collision is said to occur.
+
+v)Carrier Sense or No Carrier Sense − The stations may or may not be capable of detecting whether the channel is in use before sending the frames. 
+In algorithms which are based upon carrier sense, a station sends frame only when it senses that the channel is not busy.
+On the other hand,in algorithms based upon no carrier sense, the stations transmit a frame when it is available and later are informed whether 
+successful transmission had occurred or not.
+
+1) Dynamic channel allocation in LANs and MANs :
+
+2)Multiple access protocol :
+  >> ALOHA : i) pure 
+            ii) slotted 
+>> Frame time : Frame time is the time that passes between each of those frames. 
+>> i)Pure ALOHA :
+    In pure ALOHA, the time of transmission is continuous. Whenever a station has an available frame, 
+    it sends the frame. If there is collision and the frame is destroyed, the sender waits for a random amount of time before retransmitting it.
+    Image : https://www.tutorialspoint.com/assets/questions/media/43444/pure_aloha.jpg
+    Throughput in pure alpha: S=G.P(0),S=G.e^(-2G)
+    S=throughput,G=mean value of frames transmitted per frame time,
+    P(0)=The probability that a frame doesnot suffer(probability of success)
+    ---If G=0.5 it will be maximum throughput.
+    ---Max channel utilization 18%
+
+>> ii)Slotted ALOHA(S=G.P(0),S=G.e^(-G)) :
+      Slots are discrete time periods that are used to divide up the shared channel. Only at the start of each time slot 
+      is the station able to transmit data. If multiple stations attempt to transmit at the start of the same time slot, there may still be collisions.
+     --- If G=1 it will be maximum throughput.
+     --- Max channel utilization 37%     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
